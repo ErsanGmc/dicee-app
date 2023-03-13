@@ -52,7 +52,6 @@ html {
 .square {
   height: 400px;
   width: 400px;
-  background-color: white;
   display: inline-block;
   vertical-align: middle;
   padding: 1rem 1rem;

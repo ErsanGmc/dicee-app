@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
 import DiceImage1 from "./images/Dice1.png";
@@ -21,7 +20,6 @@ function App() {
   const [image, setNewImage] = useState(diceImages[0])
   const [image2, setNewImage2] = useState(diceImages[1])
   const rollDice = () => {
-    // Generate random number
     var randomNum1 = Math.floor(Math.random() * 6);
     var randomNum2 = Math.floor(Math.random() * 6);
     setNewImage(diceImages[randomNum1]);
@@ -34,6 +32,8 @@ function App() {
         <h1>DiceeAppQuiz</h1>
         <div className='container'>
           <img className='square' src={image}></img>
+          <h2>{randomNum1}</h2>
+          <h2>{randomNum1}</h2>
           <div style={{width: '5px', display: 'inline-block'}}></div>
           <img className='square' src={image2}></img>
         </div>
